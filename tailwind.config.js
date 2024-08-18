@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        sm: "320px",
+        md: "640px",
+      },
       colors: {
-        custom_purple_extradark: "#1f084c",
-        custom_purple_dark: "#6210cc",
-        custom_purple_light: "#dcc8fe",
-        custom_blueish_purple: "#6a65ff",
-        custom_blue: "#1556ff",
+        custom_blue_dark: "#161C2D",
+        custom_bluelight: "#F4F7FA",
+        custom_blue: "#473BF0",
       },
       animation: {
         "infinite-scroll": "infinite-scroll 5s linear infinite",

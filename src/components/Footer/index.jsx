@@ -9,8 +9,8 @@ import { MapPin, Phone, Smartphone } from "lucide-react";
 
 export default function Footer() {
   return (
-    <div className="py-10 px-28">
-      <div className="flex justify-center gap-10 item-center">
+    <div className="lg:max-w-7xl lg:px-28 md:my-20 md:px-20 sm:px-5 sm:my-10 ">
+      <div className="flex md:flex-row sm:flex-col justify-center gap-10 item-center">
         <div className="flex flex-col gap-4">
           <a href="#" className="">
             <span className="sr-only">Your Company</span>
@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className=" flex gap-20 ">
+        <div className=" flex  gap-20 ">
           <div className="flex flex-col gap-10">
             <div className="flex flex-col gap-6">
               <h1 className="text-md  font-bold ">COMPANY</h1>
@@ -65,7 +65,6 @@ export default function Footer() {
               </div>
             </div>
           </div>
-
           <div className="flex flex-col gap-6">
             <h1 className="text-md  font-bold ">HIRE TECH TALENTS </h1>
             <div className="flex flex-col gap-4 text-gray-500 text-sm font-medium">
@@ -82,7 +81,6 @@ export default function Footer() {
               <a href="#">SAP</a>
             </div>
           </div>
-
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-6">
               <h1 className="text-md  font-bold ">Socials</h1>

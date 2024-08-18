@@ -6,10 +6,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Gilroy-Bold";
+    src: local("Gilroy-Bold"),
+      url(../font/gilroy/Gilroy-Bold.ttf) format("truetype");
+  }
+}
+
 @font-face {
-  font-family: "Gilroy-Heavy";
-  src: local("Gilroy-Heavy"),
-    url(../font/gilroy/Gilroy-Heavy.ttf) format("truetype");
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"),
+    url(../font/gilroy/Gilroy-Bold.ttf) format("truetype");
 }
 
 @font-face {
@@ -19,11 +27,21 @@
 }
 
 @font-face {
-  font-family: "Gilroy-SemiBold";
-  src: local("Gilroy-SemiBold"),
-    url(./fonts/Gilroy-SemiBold.ttf) format("truetype");
+  font-family: "Gilroy-Regular";
+  src: local("Gilroy-Regular"),
+    url(./fonts/Gilroy-Regular.ttf) format("truetype");
 }
 
-body {
-  font-family: "Poppins";
+html {
+  overflow-x: unset;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Gilroy-Medium";
+  /* font-family: "Poppins"; */
 }

@@ -2,79 +2,75 @@ import React, { useState } from "react";
 import Content from "./Content";
 
 function Subnav() {
-  const [active, setActive] = useState("insights");
+  const [active, setActive] = useState("frontend");
 
   return (
-    <div className="bg-white p-20 ">
-      <div className=" bg-[#1f084c] mx-10  p-5 rounded-lg ">
-        <nav class="mx-20  px-20">
-          <div className="">
-            <div className="flex justify-center items-center text-gray-500 gap-6">
-              <div className="m-1 p-2 ">
-                <button
-                  onClick={() => setActive("insights")}
-                  className={`text-md  font-semibold hover:scale-105 hover:text-white  ${
-                    active === "insights" ? "text-white" : "text-slate-500"
-                  }`}
-                >
-                  Insights
-                </button>
-              </div>
-              <div className="m-1 p-2">
-                <button
-                  onClick={() => setActive("shareMeeting")}
-                  className={`text-md font-semibold hover:scale-105 hover:text-white  ${
-                    active === "shareMeeting" ? "text-white" : "text-slate-500 "
-                  }`}
-                >
-                  Share Meeting
-                </button>
-              </div>
-              <div className="m-1 p-2">
-                <button
-                  onClick={() => setActive("shareMeeting")}
-                  className={`text-md font-semibold hover:scale-105 hover:text-white  ${
-                    active === "shareMeeting" ? "text-white" : "text-slate-500 "
-                  }`}
-                >
-                  Share Meeting
-                </button>
-              </div>
-              <div className="m-1 p-2">
-                <button
-                  onClick={() => setActive("shareMeeting")}
-                  className={`text-md  font-semibold hover:scale-105 hover:text-white  ${
-                    active === "shareMeeting" ? "text-white" : "text-slate-500 "
-                  }`}
-                >
-                  Share Meeting
-                </button>
-              </div>
-              <div className="m-1 p-2">
-                <button
-                  onClick={() => setActive("shareMeeting")}
-                  className={`text-md  font-semibold hover:scale-105 hover:text-white  ${
-                    active === "shareMeeting" ? "text-white" : "text-slate-500 "
-                  }`}
-                >
-                  Share Meeting
-                </button>
-              </div>
-              <div className="m-1 p-2">
-                <button
-                  onClick={() => setActive("shareMeeting")}
-                  className={`text-md  font-semibold hover:scale-105 hover:text-white  ${
-                    active === "shareMeeting" ? "text-white" : "text-slate-500 "
-                  }`}
-                >
-                  Share Meeting
-                </button>
-              </div>
-            </div>
-            <div className="w-full h-1 bg-white rounded-md"></div>
-          </div>
-        </nav>
-        {active === "insights" && <Content />}
+    <div className=" bg-custom_blue_dark py-10 lg:max-w-7xl lg:px-28 md:px-10 sm:px-5 ">
+      <nav className="max-w-full overflow-x-auto px-10">
+        <ul className="flex  gap-10 items-center md:justify-center whitespace-nowrap">
+          <li>
+            <button
+              onClick={() => setActive("frontend")}
+              style={{ fontFamily: "Gilroy-Bold" }}
+              className={` md:text-md sm:text-sm   hover:scale-105   ${
+                active === "frontend" ? "text-white" : "text-gray-500"
+              }`}
+            >
+              FrontEnd <br /> Development
+            </button>
+          </li>
+          <li className="">
+            <button
+              onClick={() => setActive("backend")}
+              style={{ fontFamily: "Gilroy-Bold" }}
+              className={` md:text-sm sm:text-sm  hover:scale-105   ${
+                active === "backend" ? "text-white" : "text-gray-500 "
+              }`}
+            >
+              BackEnd <br /> Development
+            </button>
+          </li>
+          <li className="">
+            <button
+              onClick={() => setActive("app")}
+              style={{ fontFamily: "Gilroy-Bold" }}
+              className={` md:text-sm sm:text-sm  hover:scale-105   ${
+                active === "app" ? "text-white" : "text-gray-500 "
+              }`}
+            >
+              App <br /> Development
+            </button>
+          </li>
+          <li className="">
+            <button
+              onClick={() => setActive("software")}
+              style={{ fontFamily: "Gilroy-Bold" }}
+              className={` md:text-sm sm:text-sm   hover:scale-105   ${
+                active === "software" ? "text-white" : "text-gray-500 "
+              }`}
+            >
+              Software <br /> Development{" "}
+            </button>
+          </li>
+          <li className="">
+            <button
+              onClick={() => setActive("devops")}
+              style={{ fontFamily: "Gilroy-Bold" }}
+              className={` md:text-sm sm:text-sm   hover:scale-105   ${
+                active === "devops" ? "text-white" : "text-gray-500 "
+              }`}
+            >
+              Devops{" "}
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div className="mt-10">
+        {active === "frontend" && <Content />}
+        {active === "backend" && <Content />}
+        {active === "app" && <Content />}
+        {active === "software" && <Content />}
+        {active === "devops" && <Content />}
       </div>
     </div>
   );

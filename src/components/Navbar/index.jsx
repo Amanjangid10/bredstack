@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import logo from "../../assets/logo.png";
+import logo1 from "/logo1.png";
 import {
   ChevronDown,
   Dock,
@@ -16,6 +16,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import { useNavigate } from "react-router-dom";
+import CustomButton from "../CustomComponents/CustomButton";
 
 const navitems = [
   { name: " For Companies" },
@@ -57,6 +59,7 @@ export default function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const dropdownRefs = useRef({});
 
+  const navigate = useNavigate();
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -131,15 +134,15 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="sticky bg-white z-20 top-0 flex items-center justify-between shadow-sm p-4 lg:px-28"
+        className="sticky bg-white z-20 top-0 flex items-center justify-between shadow-sm p-2 lg:px-10"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <img src={logo} className="w-15 h-10" />
+        <div className="flex lg:flex">
+          <a href="#" className="">
+            <img src={logo1} className="h-10" />
           </a>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
+        <div class="hidden lg:flex lg:gap-8">
           <div className="relative">
             <button
               type="button"
@@ -289,38 +292,8 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div className="hidden lg:flex space-x-2 lg:flex-1 lg:justify-end">
-          <a
-            href="/signup"
-            className="rounded-full border border-custom_purple_dark bg-custom_purple_dark px-5 py-2 text-md font-semibold text-white shadow-md hover:bg-purple-900 "
-          >
-            Login
-          </a>
-          <a
-            href="#"
-            className="rounded-full border border-custom_purple_dark bg-white px-5 py-2 text-md font-semibold text-custom_purple_dark shadow-md hover:bg-gray-200 "
-          >
-            Talk to Sales
-          </a>
-        </div>
-        <div className="flex lg:hidden">
-          {["top"].map((anchor) => (
-            <React.Fragment key={anchor}>
-              <Button onClick={toggleDrawer(anchor, true)}>
-                <Menu color="gray" />
-              </Button>
-              <Drawer
-                sx={{
-                  "&.MuiDrawer-root .MuiDrawer-paper": { marginTop: "80px" },
-                }}
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-              >
-                {list(anchor)}
-              </Drawer>
-            </React.Fragment>
-          ))}
+        <div className="hidden lg:gap-1 lg:flex lg:justify-end">
+          <CustomButton onclick={() => navigate("/signup")} label={"Login"} />
         </div>
       </nav>
     </>

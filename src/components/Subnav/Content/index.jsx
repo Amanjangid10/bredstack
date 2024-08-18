@@ -1,44 +1,101 @@
 import React from "react";
-import { WalletCards } from "lucide-react";
-import { Workflow } from "lucide-react";
 
-import insights_subnav_img from "../../../assets/insights_subnav_img.png";
-import payments from "../../../logos/payments.svg";
-import integrated from "../../../logos/integrated.svg";
+import Vue from "../../../logos/Vue.svg";
+import Nodejs from "../../../logos/Nodejs.svg";
+import react from "../../../logos/react.svg";
+import Angular from "../../../logos/Angular.svg";
+import HTML5 from "../../../logos/HTML5.svg";
+import Mern from "../../../logos/Mern.svg";
 
 export default function Content() {
   return (
-    <div className="relative px-10 pt-2 md:px-10">
-      <div className="flex justify-around  mx-20 p-10 gap-8">
-        <div className=" w-1/2  block   rounded-lg">
-          <div className=" bg-white flex justify-center rounded-lg item-center ">
-            <img src={insights_subnav_img} className="rounded-lg " />
+    <div className="">
+      <div className="flex  md:flex-row sm:flex-col justify-around  gap-8">
+        <div className=" md:w-1/2  rounded-lg">
+          <div
+            className=" grid grid-cols-2 gap-5 h-full justify-center rounded-lg item-center "
+            style={{ fontFamily: "Gilroy-Bold" }}
+          >
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2 bg-custom_bluelight rounded-lg  ">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50"
+              />
+              <img src={react} className="w-1/5 " />
+              <h1>React</h1>
+            </button>
+            <button className=" relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50"
+              />
+              <img src={Vue} className="w-1/5" />
+              <h1>Vue</h1>
+            </button>
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50"
+              />
+              <img src={Nodejs} className="w-1/5" />
+              <h1>Nodejs</h1>
+            </button>
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50"
+              />
+              <img src={Angular} className="w-1/5" />
+              <h1>Angular</h1>
+            </button>
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50"
+              />
+              <img src={HTML5} className="w-1/5" />
+              <h1>HTML5</h1>
+            </button>
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+              <input
+                type="checkbox"
+                className="absolute top-2 right-2  z-100 opacity-50 "
+              />
+              <img src={Mern} className="w-1/5" />
+              <h1>MERN</h1>
+            </button>
           </div>
         </div>
-        <div className="flex flex-col text-left w-1/2 gap-3">
-          <div className=" w-fit bg-white rounded-md font-semibold ">
-            <h1 className=" px-2 py-1 ">EASY ADMIN</h1>
+        <div className="flex flex-col text-left md:w-1/2 sm:w-full gap-4">
+          <div className=" w-fit px-2 py-1 bg-white text-custom_blue rounded-md ">
+            <h1 style={{ fontFamily: "Gilroy-Bold" }}>EASY ADMIN</h1>
           </div>
-          <h1 className="text-4xl  text-white text-left mt-4 font-bold p-0">
+          <h1
+            className="text-4xl text-white text-left"
+            style={{ fontFamily: "Gilroy-Bold" }}
+          >
             Take the pain out of company admin
           </h1>
-          <p className="text-slate-300 text-sm mt-4">
+          <p className="text-sm  text-gray-500">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
             odit quibusdam architecto, eum delectus unde officia, fugit,
           </p>
-          <div className="bg-gray-200 w-full h-1 rounded-lg mt-5"></div>
-          <div className="flex bg-[#9144f4]  justify-around mt-3 p-2 rounded-lg">
+          <div className="bg-gray-200 w-full h-0.5 rounded-lg"></div>
+          <div className="flex bg-custom_blue justify-around mt-3 p-2 rounded-lg">
             <div className=" flex gap-2">
-              <img src={payments} className="h-10" />
-              <div className="flex flex-col gap-4">
-                <h1 className="text-lg text-white   font-bold">Easy payment</h1>
+              <div className="flex flex-col gap-2">
+                <h1
+                  className="text-xl text-white"
+                  style={{ fontFamily: "Gilroy-Bold" }}
+                >
+                  Easy payment
+                </h1>
                 <p className="text-sm  text-slate-100">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
             </div>
-            <div className="flex gap-2">
-              <img src={integrated} className="h-10" />
+            {/* <div className="flex gap-2">
               <div className="flex flex-col gap-4">
                 <h1 className="text-lg  text-white font-bold">
                   Fully integrated
@@ -47,7 +104,7 @@ export default function Content() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

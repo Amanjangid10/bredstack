@@ -1,4 +1,6 @@
 import Vue from "../../logos/Vue.svg";
+import Nodejs from "../../logos/Nodejs.svg";
+import react from "../../logos/react.svg";
 import Angular from "../../logos/Angular.svg";
 import HTML5 from "../../logos/HTML5.svg";
 import Mern from "../../logos/Mern.svg";
@@ -18,9 +20,9 @@ import Kafka from "../../logos/Kafka.svg";
 import Kubernetes from "../../logos/Kubernetes.svg";
 import Laravel from "../../logos/Laravel.svg";
 import linux from "../../logos/linux.svg";
-import Nodejs from "../../logos/Nodejs.svg";
+
 import Python from "../../logos/Python.svg";
-import react from "../../logos/react.svg";
+
 import Ruby from "../../logos/Ruby.svg";
 import Shopify from "../../logos/Shopify.svg";
 import Terraform from "../../logos/Terraform.svg";
