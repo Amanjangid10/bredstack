@@ -45,7 +45,7 @@ export default function IntegrateSection() {
             </div>
           </div>
           <div className="flex  md:flex-col justify-between gap-2 ">
-            <div className="flex md:h-1/2 sm:w-1/2 sm:flex-col md:flex-row p-2   gap-2 border-2 border-gray-100  rounded-lg">
+            <div className="flex md:h-1/2 md:w-full sm:w-1/2 sm:flex-col md:flex-row p-2   gap-2 border-2 border-gray-100  rounded-lg">
               <img src={webflow} alt="tech1" className="h-8 w-fit" />
               <div className="text-left">
                 <p className="font-bold">Webflow</p>
@@ -54,7 +54,7 @@ export default function IntegrateSection() {
                 </p>
               </div>
             </div>
-            <div className="flex md:h-1/2 sm:w-1/2 sm:flex-col md:flex-row  p-2 gap-2 border-2 border-gray-100  rounded-lg">
+            <div className="flex md:h-1/2 md:w-full  sm:w-1/2 sm:flex-col md:flex-row  p-2 gap-2 border-2 border-gray-100  rounded-lg">
               <img src={twitter} alt="tech1" className="h-8 w-fit" />
               <div className="text-left">
                 <p className="font-bold">Twitter</p>
@@ -71,7 +71,7 @@ export default function IntegrateSection() {
           </div>
 
           <div className="flex md:flex-col sm:flex-row justify-between  ">
-            <div className="flex md:h-1/2 sm:w-1/2 md:flex-row sm:flex-col  p-2 gap-2 border-2 border-gray-100  rounded-lg">
+            <div className="flex md:h-1/2 md:w-full  sm:w-1/2 md:flex-row sm:flex-col  p-2 gap-2 border-2 border-gray-100  rounded-lg">
               <img src={discord} alt="tech1" className="h-10 w-fit" />
               <div className="text-left">
                 <p style={{ fontFamily: "Gilroy-Bold" }}>Discord</p>
@@ -80,7 +80,7 @@ export default function IntegrateSection() {
                 </p>
               </div>
             </div>
-            <div className="flex  md:h-1/2 sm:w-1/2 md:flex-row sm:flex-col p-2 gap-2 border-2 border-gray-100  rounded-lg">
+            <div className="flex  md:h-1/2 md:w-full  sm:w-1/2 md:flex-row sm:flex-col p-2 gap-2 border-2 border-gray-100  rounded-lg">
               <img src={instagram} alt="tech1" className="h-10 w-fit" />
               <div className="text-left">
                 <p style={{ fontFamily: "Gilroy-Bold" }}>Instagram</p>

@@ -29,7 +29,7 @@ export default function Hero() {
         <Modal isopen={isModalOpen} onclose={closeModal} />
       </div>
 
-      <div className="relative bg-custom_blue_dark text-white flex flex-col items-center justify-center gap-10 pt-20 md:pb-80 md:mb-80 sm:pb-40 sm:mb-32   ">
+      <div className="relative bg-custom_blue_dark text-white flex flex-col items-center justify-center gap-10 pt-20 md:pb-80 md:mb-80 sm:pb-40 sm:mb-20   ">
         <div className=" flex flex-col items-center md:w-1/2 lg:gap-8 md:gap-8 sm:gap-4 sm:mx-5">
           <h1
             className="text-center lg:text-2xl sm:text-xl flex flex-col gap-2 "
@@ -91,7 +91,7 @@ export default function Hero() {
             Trusted by over 1000+ clients.
           </div> */}
         </div>
-        <div className=" absolute top-2/3 lg:max-w-7xl lg:mx-28 md:mx-10 sm:mx-5 sm:mt-10 rounded-3xl border overflow-hidden">
+        <div className=" absolute md:top-[55%] sm:top-[60%] lg:max-w-7xl lg:mx-28 md:mx-10 sm:mx-5 sm:mt-10 rounded-3xl border overflow-hidden">
           <img src={Image} className="min-w-0 rounded-3xl " />
         </div>
       </div>

@@ -2,32 +2,29 @@ import React, { useState } from "react";
 import ai_img from "../../assets/ai_img.png";
 import analytics from "../../assets/analytics.png";
 import { logo } from "./constants";
-import TechStack from "./TechStack";
+import Marquee from "react-fast-marquee";
 
 export default function Client() {
   return (
-    <div className="flex justify-center lg:pt-20">
-      <div className="flex flex-col lg:max-w-7xl md:max-w-2xl sm:max-w-full items-center">
-        <div className=" min-h-0">
-          <div className=" flex justify-center  lg:py-10 lg:px-28 md:p-8 sm:px-4 sm:py-2 ">
-            <div className="w-full flex justify-center lg:gap-10 md:gap-8 sm:gap-6">
-              {logo.map((item, index) => {
-                console.log(item);
-                return (
-                  <div key={index}>
-                    <img
-                      src={item}
-                      className="opacity-50 lg:h-14 lg:w-32 md:h-12 md:w-28 sm:h-10 sm:w-32  "
-                    />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+    <div className="flex justify-center py-10 sm:px-5  ">
+      <div className=" lg:max-w-7xl lg:px-28 md:max-w-2xl sm:max-w-full ">
+        <div className="flex justify-center lg:mx-28 lg:gap-20 md:gap-8 sm:gap-6 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
+          <Marquee>
+            {logo.map((item, index) => {
+              console.log(item);
+              return (
+                <div key={index}>
+                  <img
+                    src={item}
+                    className="opacity-50 lg:h-20 lg:w-40 lg:mx-10 md:h-12 md:w-28 sm:h-10 sm:w-32  "
+                  />
+                </div>
+              );
+            })}
+          </Marquee>
         </div>
-
         <div
-          className=" flex md:flex-row sm:flex-col justify-between items-center w-full gap-4  lg:px-28 md:px-20 sm:px-12 "
+          className="flex md:flex-row sm:flex-col justify-between items-center xl:px-0 lg:px-28 gap-4 lg:mt-16 md:mt-12 sm:mt-8  "
           style={{ fontFamily: "Gilroy-Bold" }}
         >
           <div className="flex gap-2 md:w-1/2 sm:w-full p-5 items-center justify-around  rounded-lg bg-custom_blue">

@@ -54,7 +54,7 @@ export default function ServiceSection() {
               className=" relative md:right-10 sm:right-5 opacity-70 w-1/3 border h-full rounded-lg"
             />
           </div>
-          <div className="md:w-1/2 sm:w-full flex flex-col  gap-4">
+          <div className="md:hidden sm:w-full flex flex-col  gap-4">
             <h1
               className=" sm:block md:hidden md:text-2xl"
               style={{ fontFamily: "Gilroy-Bold" }}

@@ -1,13 +1,10 @@
 import React from "react";
 
-import Vue from "../../../logos/Vue.svg";
-import Nodejs from "../../../logos/Nodejs.svg";
-import react from "../../../logos/react.svg";
-import Angular from "../../../logos/Angular.svg";
-import HTML5 from "../../../logos/HTML5.svg";
-import Mern from "../../../logos/Mern.svg";
+import { app } from "../Data.jsx";
 
-export default function Content() {
+import appImg from "./img/appImg.png";
+
+export default function AppDev() {
   return (
     <div className="">
       <div className="flex  md:flex-row sm:flex-col justify-around  gap-8">
@@ -16,57 +13,36 @@ export default function Content() {
             className=" grid grid-cols-2 gap-5 h-full justify-center rounded-lg item-center "
             style={{ fontFamily: "Gilroy-Bold" }}
           >
-            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2 bg-custom_bluelight rounded-lg  ">
+            <button className="relative  flex flex-col justify-center items-center border-2 p-3 gap-2 bg-custom_bluelight rounded-lg md:h-24 md:h-24  ">
               <input
                 type="checkbox"
                 className="absolute top-2 right-2  z-100 opacity-50"
               />
-              <img src={react} className="w-1/5 " />
-              <h1>React</h1>
+              <img src={app[0].img} className="w-2/5" />
+              <h1 className="text-sm">{app[0].title}</h1>
             </button>
-            <button className=" relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+            <button className=" relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg md:h-24">
               <input
                 type="checkbox"
                 className="absolute top-2 right-2  z-100 opacity-50"
               />
-              <img src={Vue} className="w-1/5" />
-              <h1>Vue</h1>
+              <img src={app[1].img} className="w-2/5" />
+              <h1 className="text-sm">{app[1].title}</h1>
             </button>
-            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
+            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg md:h-24">
               <input
                 type="checkbox"
                 className="absolute top-2 right-2  z-100 opacity-50"
               />
-              <img src={Nodejs} className="w-1/5" />
-              <h1>Nodejs</h1>
-            </button>
-            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
-              <input
-                type="checkbox"
-                className="absolute top-2 right-2  z-100 opacity-50"
-              />
-              <img src={Angular} className="w-1/5" />
-              <h1>Angular</h1>
-            </button>
-            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
-              <input
-                type="checkbox"
-                className="absolute top-2 right-2  z-100 opacity-50"
-              />
-              <img src={HTML5} className="w-1/5" />
-              <h1>HTML5</h1>
-            </button>
-            <button className="relative flex flex-col justify-center items-center border-2 p-3 gap-2  bg-custom_bluelight rounded-lg">
-              <input
-                type="checkbox"
-                className="absolute top-2 right-2  z-100 opacity-50 "
-              />
-              <img src={Mern} className="w-1/5" />
-              <h1>MERN</h1>
+              <img src={app[2].img} className="w-2/5" />
+              <h1 className="text-sm">{app[2].title}</h1>
             </button>
           </div>
         </div>
-        <div className="flex flex-col text-left md:w-1/2 sm:w-full gap-4">
+        <div className="md:w-1/2 h-auto flex items-center justify-center">
+          <img src={appImg} />
+        </div>
+        {/* <div className="flex flex-col text-left md:w-1/2 sm:w-full gap-4">
           <div className=" w-fit px-2 py-1 bg-white text-custom_blue rounded-md ">
             <h1 style={{ fontFamily: "Gilroy-Bold" }}>EASY ADMIN</h1>
           </div>
@@ -95,7 +71,7 @@ export default function Content() {
                 </p>
               </div>
             </div>
-            {/* <div className="flex gap-2">
+            <div className="flex gap-2">
               <div className="flex flex-col gap-4">
                 <h1 className="text-lg  text-white font-bold">
                   Fully integrated
@@ -104,9 +80,9 @@ export default function Content() {
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </p>
               </div>
-            </div> */}
+            </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
