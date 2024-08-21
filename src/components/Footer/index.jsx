@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <div className="flex justify-center">
       <div className="lg:max-w-7xl lg:px-28 md:my-20 md:px-20 sm:px-5 sm:my-10 ">
-        <div className="flex md:flex-row sm:flex-col justify-center gap-10 item-center">
+        <div className="flex md:flex-row sm:flex-col justify-center lg:gap-28 md:gap-10 item-center">
           <div className="flex flex-col gap-4">
             <a href="#" className="">
               <img src={logo} className="w-15 h-10" />

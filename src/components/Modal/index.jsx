@@ -27,18 +27,19 @@ export default function Modal({ isopen, onclose }) {
   };
 
   return (
-    <div>
+    <>
       {isopen && (
-        <div className="flex   min-h-screen max-h-screen bg-opacity-70 bg-gray-900 ">
-          <div className="m-10 mx-36 p-4 flex justify-center border border-slate-300 rounded-3xl bg-white">
-            <div className="w-1/2">
-              <div className="flex justify-between px-10 p-4">
+        <div className="flex justify-center items-center w-screen min-h-screen bg-opacity-70 bg-gray-900 md:p-0 sm:p-2 ">
+          <div className="flex md:flex-row sm:flex-col border border-slate-300 rounded-xl bg-white p-2 lg:max-w-3xl  md:max-w-xl  ">
+            <div className="md:w-[60%]">
+              <div className="flex justify-between p-5">
                 <a href="/" className="-m-1.5 p-1.5">
                   <img src={logo} className="w-15 h-10" />
                 </a>
                 <button
+                  style={{ fontFamily: "Gilroy-Bold" }}
                   onClick={handleOnClose}
-                  className="font-semibold
+                  className=" md:text-sm sm:text-xs
                 "
                 >
                   Close
@@ -55,21 +56,14 @@ export default function Modal({ isopen, onclose }) {
               )}
               {isSubmitted && <Submitted onclose={handleOnClose} />}
             </div>
-            <div className="w-1/2 flex flex-col gap-5 h-auto m p-20  bg-custom_purple_dark rounded-3xl ">
-              <h1 className=" text-left  text-3xl text-white  font-medium ">
+            <div className="md:w-[40%] flex flex-col gap-5 h-auto lg:p-20 md:p-8 sm:p-5  bg-custom_blue rounded-xl ">
+              <h1 className=" md:text-left  sm:text-center  lg:text-3xl md:text-2xl sm:text-xl text-white">
                 A simple way to manage your buisness requirements.
               </h1>
-              <div className=" flex ">
-                <img src="" className=" w-5/6 rounded-xl" />
-                <img
-                  src=""
-                  className="relative right-20 top-20 w-1 h-3/5 rounded-xl"
-                />
-              </div>
             </div>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
