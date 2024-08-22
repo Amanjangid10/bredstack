@@ -21,7 +21,7 @@ export default function IntegrateSection() {
             INTEGRATION
           </h1>
         </div>
-        <div className="flex md:flex-row sm:flex-col justify-between items-center  md:gap-10  sm:gap-5">
+        <div className="flex md:flex-row sm:flex-col justify-between md:items-center  md:gap-10  sm:gap-5">
           <h1
             className=" text-left text-nowrap lg:text-4xl md:text-4xl sm:text-3xl "
             style={{ fontFamily: "Gilroy-Bold" }}
@@ -32,7 +32,6 @@ export default function IntegrateSection() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut unde,
             repudiandae eveniet similique tempora modi quae culpa.
           </h1>
-          <CustomButton label={"Learn more"} />
         </div>
         <div className="flex md:flex-row sm:flex-col gap-2 justify-between w-full">
           <div className="flex flex-col md:md:w-1/5 p-2 gap-2  border-2 border-gray-100  rounded-lg">
@@ -46,7 +45,7 @@ export default function IntegrateSection() {
           </div>
           <div className="flex  md:flex-col justify-between gap-2 ">
             <div className="flex md:h-1/2 md:w-full sm:w-1/2 sm:flex-col md:flex-row p-2   gap-2 border-2 border-gray-100  rounded-lg">
-              <img src={webflow} alt="tech1" className="h-8 w-fit" />
+              <img src={webflow} alt="tech1" className="w-10" />
               <div className="text-left">
                 <p className="font-bold">Webflow</p>
                 <p className="text-xs text-gray-400">
@@ -55,7 +54,7 @@ export default function IntegrateSection() {
               </div>
             </div>
             <div className="flex md:h-1/2 md:w-full  sm:w-1/2 sm:flex-col md:flex-row  p-2 gap-2 border-2 border-gray-100  rounded-lg">
-              <img src={twitter} alt="tech1" className="h-8 w-fit" />
+              <img src={twitter} alt="tech1" className="w-10" />
               <div className="text-left">
                 <p className="font-bold">Twitter</p>
                 <p className="text-xs text-gray-400">Join the conversation.</p>
@@ -72,7 +71,7 @@ export default function IntegrateSection() {
 
           <div className="flex md:flex-col sm:flex-row justify-between  ">
             <div className="flex md:h-1/2 md:w-full  sm:w-1/2 md:flex-row sm:flex-col  p-2 gap-2 border-2 border-gray-100  rounded-lg">
-              <img src={discord} alt="tech1" className="h-10 w-fit" />
+              <img src={discord} alt="tech1" className="w-10" />
               <div className="text-left">
                 <p style={{ fontFamily: "Gilroy-Bold" }}>Discord</p>
                 <p className="text-xs text-gray-400">
@@ -81,7 +80,7 @@ export default function IntegrateSection() {
               </div>
             </div>
             <div className="flex  md:h-1/2 md:w-full  sm:w-1/2 md:flex-row sm:flex-col p-2 gap-2 border-2 border-gray-100  rounded-lg">
-              <img src={instagram} alt="tech1" className="h-10 w-fit" />
+              <img src={instagram} alt="tech1" className="w-10" />
               <div className="text-left">
                 <p style={{ fontFamily: "Gilroy-Bold" }}>Instagram</p>
                 <p className="text-xs text-gray-400">
@@ -100,6 +99,7 @@ export default function IntegrateSection() {
             </div>
           </div>
         </div>
+        <CustomButton label={"Continue"} />
         <div>
           <div className="relative top-5 w-fit z-10 flex items-center  gap-2 rounded-lg ml-5 py-2 px-4 bg-custom_bluelight ">
             <img src={product} alt="Product hunt" className="w-8 min" />

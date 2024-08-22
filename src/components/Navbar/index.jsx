@@ -134,7 +134,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="sticky bg-white z-20 top-0 flex items-center justify-between shadow-sm p-2 lg:px-10"
+        className="sticky bg-custom_blue_dark z-20 top-0 flex items-center justify-between  p-2 lg:px-10"
         aria-label="Global"
       >
         <div className="flex lg:flex">
@@ -294,6 +294,9 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:gap-1 lg:flex lg:justify-end">
           <CustomButton onclick={() => navigate("/signup")} label={"Login"} />
+        </div>
+        <div className="md:hidden sm:block">
+          <Menu color="white" />
         </div>
       </nav>
     </>

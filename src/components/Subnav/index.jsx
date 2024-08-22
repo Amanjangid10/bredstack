@@ -31,13 +31,13 @@ function Subnav() {
     <div className="md:flex justify-center md:p-10 sm:p-5 bg-custom_bluelight">
       <div className=" bg-white p-5 flex flex-col gap-5 rounded-lg ">
         <nav className="max-w-full overflow-x-auto ">
-          <ul className="flex md:justify-between items-center md:gap-0 sm:gap-10  whitespace-nowrap">
-            <li className="md:w-1/5 text-center">
+          <ul className="flex md:justify-between items-center md:px-0 sm:px-1 md:gap-0 sm:gap-10  whitespace-nowrap ">
+            <li className="md:w-1/5 text-center ">
               <button
                 ref={(e) => (buttonRefs.current[ref[0]] = e)}
                 onClick={() => setActive(ref[0])}
                 style={{ fontFamily: "Gilroy-Bold" }}
-                className={` md:text-md sm:text-sm text-center   hover:scale-105   ${
+                className={` md:text-md sm:text-sm md:text-center sm:text-left hover:scale-105   ${
                   active === "frontend" ? "text-custom_black" : "text-gray-500"
                 }`}
               >
@@ -49,7 +49,7 @@ function Subnav() {
                 ref={(e) => (buttonRefs.current[ref[1]] = e)}
                 onClick={() => setActive(ref[1])}
                 style={{ fontFamily: "Gilroy-Bold" }}
-                className={` md:text-sm sm:text-sm text-center   hover:scale-105   ${
+                className={` md:text-sm sm:text-sm md:text-center sm:text-left   hover:scale-105   ${
                   active === "backend" ? "text-custom_black" : "text-gray-500 "
                 }`}
               >
@@ -61,7 +61,7 @@ function Subnav() {
                 ref={(e) => (buttonRefs.current[ref[2]] = e)}
                 onClick={() => setActive(ref[2])}
                 style={{ fontFamily: "Gilroy-Bold" }}
-                className={` md:text-sm sm:text-sm text-center   hover:scale-105   ${
+                className={` md:text-sm sm:text-sm md:text-center sm:text-left   hover:scale-105   ${
                   active === "app" ? "text-custom_black" : "text-gray-500 "
                 }`}
               >
@@ -73,7 +73,7 @@ function Subnav() {
                 ref={(e) => (buttonRefs.current[ref[3]] = e)}
                 onClick={() => setActive(ref[3])}
                 style={{ fontFamily: "Gilroy-Bold" }}
-                className={` md:text-sm sm:text-sm text-center   hover:scale-105   ${
+                className={` md:text-sm sm:text-sm md:text-center sm:text-left   hover:scale-105   ${
                   active === "software" ? "text-custom_black" : "text-gray-500 "
                 }`}
               >
@@ -85,7 +85,7 @@ function Subnav() {
                 ref={(e) => (buttonRefs.current[ref[4]] = e)}
                 onClick={() => setActive(ref[4])}
                 style={{ fontFamily: "Gilroy-Bold" }}
-                className={` md:text-sm sm:text-sm text-center    hover:scale-105   ${
+                className={` md:text-sm sm:text-sm md:text-center sm:text-left     hover:scale-105   ${
                   active === "devops" ? "text-custom_black" : "text-gray-500 "
                 }`}
               >
@@ -121,7 +121,7 @@ function Subnav() {
             }    h-0.5 `}
           ></div>
         </div>
-        <div className=" p-2">
+        <div className="">
           {active === ref[0] && <Frontend />}
           {active === ref[1] && <Backend />}
           {active === ref[2] && <AppDev />}
