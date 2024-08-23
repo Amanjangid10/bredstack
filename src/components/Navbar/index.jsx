@@ -146,7 +146,7 @@ export default function Navbar() {
           <div className="relative">
             <button
               type="button"
-              className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+              className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white"
               aria-expanded="false"
               onClick={() => toggleDropdown("dropdown1")}
               ref={(ref) => registerRef("dropdown1", ref)}
@@ -241,7 +241,7 @@ export default function Navbar() {
           </div>
           <div className="relative">
             <button
-              className="flex items-center text-sm font-semibold leading-6 gap-x-1 text-gray-900"
+              className="flex items-center text-sm font-semibold leading-6 gap-x-1 text-white"
               aria-expanded="false"
               onClick={() => toggleDropdown("dropdown2")}
               ref={(ref) => registerRef("dropdown2", ref)}
@@ -286,7 +286,7 @@ export default function Navbar() {
             )}
           </div>
           <div className="relative">
-            <button className="flex items-center text-sm font-semibold leading-6 gap-x-1 text-gray-900">
+            <button className="flex items-center text-sm font-semibold leading-6 gap-x-1 text-white">
               Why BredStack
               <ChevronDown size={12} />
             </button>
