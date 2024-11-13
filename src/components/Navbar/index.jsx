@@ -105,12 +105,10 @@ export default function Navbar() {
   }, []);
 
   const registerRef = (id, ref) => {
-    console.log(ref);
     dropdownRefs.current[id] = ref;
   };
 
   const list = (anchor) => {
-    console.log(anchor);
     return (
       <Box
         sx={{ width: anchor === "top" }}
@@ -142,7 +140,7 @@ export default function Navbar() {
             <img src={logo1} className="h-10" />
           </a>
         </div>
-        <div class="hidden lg:flex lg:gap-8">
+        <div className="hidden lg:flex lg:gap-8">
           <div className="relative">
             <button
               type="button"
@@ -161,77 +159,77 @@ export default function Navbar() {
             </button>
             {isOpen === "dropdown1" && (
               <div
-                class={
+                className={
                   "fixed grid grid-cols-2 left-0 z-10 mt-4 p-3 gap-y-4 w-full max-w-full overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
                 }
               >
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                  <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <Dock />
                   </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
+                  <div className="flex-auto">
+                    <a href="#" className="block font-semibold text-gray-900">
                       Web Application Development
-                      <span class="absolute inset-0"></span>
+                      <span className="absolute inset-0"></span>
                     </a>
-                    <p class="mt-1 text-gray-600">
+                    <p className="mt-1 text-gray-600">
                       Crafting Digital Experiences: Custom Web Application
                       Development.
                     </p>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                  <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <TabletSmartphone />
                   </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
+                  <div className="flex-auto">
+                    <a href="#" className="block font-semibold text-gray-900">
                       Mobile Application Development
-                      <span class="absolute inset-0"></span>
+                      <span className="absolute inset-0"></span>
                     </a>
-                    <p class="mt-1 text-gray-600">
+                    <p className="mt-1 text-gray-600">
                       Seamless Mobile Experiences, One App at a Time.
                     </p>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                  <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <ShieldCheck />
                   </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
+                  <div className="flex-auto">
+                    <a href="#" className="block font-semibold text-gray-900">
                       Security
-                      <span class="absolute inset-0"></span>
+                      <span className="absolute inset-0"></span>
                     </a>
-                    <p class="mt-1 text-gray-600">
+                    <p className="mt-1 text-gray-600">
                       Your customers data will be safe and secure
                     </p>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                  <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <Workflow />
                   </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
+                  <div className="flex-auto">
+                    <a href="#" className="block font-semibold text-gray-900">
                       Integrations
-                      <span class="absolute inset-0"></span>
+                      <span className="absolute inset-0"></span>
                     </a>
-                    <p class="mt-1 text-gray-600">
+                    <p className="mt-1 text-gray-600">
                       Connect with third-party tools
                     </p>
                   </div>
                 </div>
-                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-                  <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                  <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <RefreshCw />
                   </div>
-                  <div class="flex-auto">
-                    <a href="#" class="block font-semibold text-gray-900">
+                  <div className="flex-auto">
+                    <a href="#" className="block font-semibold text-gray-900">
                       Automations
-                      <span class="absolute inset-0"></span>
+                      <span className="absolute inset-0"></span>
                     </a>
-                    <p class="mt-1 text-gray-600">
+                    <p className="mt-1 text-gray-600">
                       Streamlining Your Success Through Intelligent Automation
                     </p>
                   </div>
@@ -246,7 +244,7 @@ export default function Navbar() {
               onClick={() => toggleDropdown("dropdown2")}
               ref={(ref) => registerRef("dropdown2", ref)}
             >
-              For developers
+              For Job Seekers
               <ChevronDown
                 size={12}
                 className={`transform transition-transform duration-500 ${
@@ -287,7 +285,7 @@ export default function Navbar() {
           </div>
           <div className="relative">
             <button className="flex items-center text-sm font-semibold leading-6 gap-x-1 text-white">
-              Why BredStack
+              For Referral
               <ChevronDown size={12} />
             </button>
           </div>

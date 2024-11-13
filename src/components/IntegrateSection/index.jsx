@@ -26,7 +26,7 @@ export default function IntegrateSection() {
             className=" text-left text-nowrap lg:text-4xl md:text-4xl sm:text-3xl "
             style={{ fontFamily: "Gilroy-Bold" }}
           >
-            Integrated with <br /> tools you love
+            Corporate hiring <br /> with us.
           </h1>
           <h1 className=" text-gray-500 sm:text-wrap sm:text-xs">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut unde,

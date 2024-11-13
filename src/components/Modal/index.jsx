@@ -12,7 +12,6 @@ export default function Modal({ isopen, onclose }) {
   const handleNext = () => {
     setStep(step + 1);
   };
-
   const handlePrev = () => {
     setStep(step - 1);
   };

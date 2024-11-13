@@ -28,7 +28,10 @@ function Subnav() {
   // }, [active]);
 
   return (
-    <div className="md:flex justify-center md:p-10 sm:p-5 bg-custom_bluelight">
+    <div className="md:flex flex-col  gap-10 justify-center md:p-10 sm:p-5 bg-custom_bluelight">
+      <h1 className="text-center text-4xl font-bold">
+        Hire Based On Tech Skills
+      </h1>
       <div className=" bg-white p-5 flex flex-col gap-5 rounded-lg ">
         <nav className="max-w-full overflow-x-auto ">
           <ul className="flex md:justify-between items-center md:px-0 sm:px-1 md:gap-0 sm:gap-10  whitespace-nowrap ">

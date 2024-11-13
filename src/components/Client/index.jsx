@@ -11,7 +11,6 @@ export default function Client() {
         <div className="flex justify-center lg:mx-28 lg:gap-20 md:gap-8 sm:gap-6 overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] ">
           <Marquee>
             {logo.map((item, index) => {
-              console.log(item);
               return (
                 <div key={index}>
                   <img
