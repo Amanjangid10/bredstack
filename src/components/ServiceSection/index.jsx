@@ -84,7 +84,12 @@ export default function ServiceSection() {
           </div>
         </div>
         <div className="flex md:flex-row sm:flex-col justify-between items-center gap-10 ">
-          <img src={Image4} className=" md:w-1/2 sm:w-full h-full " />
+          <img
+            src={
+              "https://cdn.prod.website-files.com/62775a91cc3db44c787149de/663551ed56f85796ef2c2299_Section6_Contatcs.webp"
+            }
+            className=" md:w-1/2 sm:w-full h-full "
+          />
           <div className="md:w-1/2 sm:w-full flex flex-col  gap-4">
             <h1 className=" md:text-2xl" style={{ fontFamily: "Gilroy-Bold" }}>
               Access Verified, <br /> Referral-Backed Candidates
